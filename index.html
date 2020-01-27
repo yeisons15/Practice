@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    
+     
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="hero">
+        <div class="btn-box">
+            <button id="btn1" onclick="openHTML()"><i class="fa fa-html5"></i>HTML</button>
+            <button id="btn2" onclick="openCSS()"><i class="fa fa-css3"></i>CSS</button>
+            <button id="btn3" onclick="openJS()"><i class="fa fa-codepen"></i>JAVASCRIPT</button>
+        </div>
+
+        <div id="content1" class="content">
+            <div class="content-left">
+                <h1>Learn HTML</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolorum voluptates consequuntur vero ex quaerat atque aliquid magni illo quasi, quos perferendis voluptas sed. Quisquam tempora minus amet cum sunt? Illum quasi quibusdam quia ipsum aspernatur eius expedita earum neque necessitatibus sequi possimus excepturi dolore fuga ratione, ab nostrum architecto!</p>
+                <a href="#">WHATCH VIDEO</a>
+            </div>
+            <div class="content-right">
+                <img src="img1.png" alt="">
+            </div>
+        </div>
+
+        <div id="content2" class="content">
+            <div class="content-left">
+                <h1>Learn CSS</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolorum voluptates consequuntur vero ex quaerat atque aliquid magni illo quasi, quos perferendis voluptas sed. Quisquam tempora minus amet cum sunt? Illum quasi quibusdam quia ipsum aspernatur eius expedita earum neque necessitatibus sequi possimus excepturi dolore fuga ratione, ab nostrum architecto!</p>
+                <a href="#">WHATCH VIDEO</a>
+            </div>
+            <div class="content-right">
+                <img src="img2.png" alt="">
+            </div>
+        </div>
+
+        <div id="content3" class="content">
+            <div class="content-left">
+                <h1>Learn JAVASCRIPT</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolorum voluptates consequuntur vero ex quaerat atque aliquid magni illo quasi, quos perferendis voluptas sed. Quisquam tempora minus amet cum sunt? Illum quasi quibusdam quia ipsum aspernatur eius expedita earum neque necessitatibus sequi possimus excepturi dolore fuga ratione, ab nostrum architecto!</p>
+                <a href="#">WHATCH VIDEO</a>
+            </div>
+            <div class="content-right">
+                <img src="img3.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var content1 =document.getElementById("content1");
+        var content2 =document.getElementById("content2");
+        var content3 =document.getElementById("content2");
+        var btn1 = document.getElementById("bnt1");
+        var btn2 = document.getElementById("bnt2");
+        var btn3 = document.getElementById("bnt3");
+
+        function openHTML(){
+            content1.style.transform="translateX(0)"
+            content2.style.transform="translateX(100%)"
+            content3.style.transform="translateX(100%)"
+        }
+        function openCSS(){
+            content1.style.transform="translateX(100%)"
+            content2.style.transform="translateX(0)"
+            //content3.style.transform="translateX(50%)"
+        }
+        function openJS(){
+            //content1.style.transform="translateX(100%)"
+            content2.style.transform="translateX(50%)"
+            content3.style.transform="translateX(0)"
+        }
+    </script>
+</body>
+</html>
